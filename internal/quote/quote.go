@@ -1,20 +1,26 @@
 package quote
 
-import "github.com/google/uuid"
+import (
+	"go-micro-api-quote/internal/author"
+	"go-micro-api-quote/internal/book"
+
+	"github.com/google/uuid"
+)
 
 type Quote struct {
 	Id     Id
 	Text   Text
-	Author Author
+	Author author.Author
+	Book   book.Book
 }
 
 func NewFromValues(
-	author string,
+	athr string,
 	txt string,
 ) Quote {
 	return Quote{
 		Id:     NewIdFromUuid(uuid.New()),
 		Text:   NewtextFromString(txt),
-		Author: NewAuthorFromString(author),
+		Author: author.NewAuthorFromString(athr),
 	}
 }
