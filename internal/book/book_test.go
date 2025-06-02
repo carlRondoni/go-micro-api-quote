@@ -17,5 +17,5 @@ func TestBook(t *testing.T) {
 	bk := book.NewBook(title, athrObj)
 
 	assert.Equal(t, title, bk.Title.Value())
-	assert.Equal(t, athrObj, bk.Author)
+	assert.Equal(t, athrObj.Name, bk.Author)
 }
