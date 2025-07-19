@@ -1,7 +1,7 @@
 package author_test
 
 import (
-	"go-micro-api-quote/internal/author"
+	"go-micro-api-quote/internal/domain/author"
 	"testing"
 
 	"github.com/brianvoe/gofakeit/v7"

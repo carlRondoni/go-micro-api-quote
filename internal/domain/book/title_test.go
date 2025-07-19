@@ -1,7 +1,7 @@
 package book_test
 
 import (
-	"go-micro-api-quote/internal/book"
+	"go-micro-api-quote/internal/domain/book"
 	"testing"
 
 	"github.com/brianvoe/gofakeit/v7"

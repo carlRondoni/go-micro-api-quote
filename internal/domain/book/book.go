@@ -1,7 +1,7 @@
 package book
 
 import (
-	"go-micro-api-quote/internal/author"
+	"go-micro-api-quote/internal/domain/author"
 
 	"github.com/google/uuid"
 )
