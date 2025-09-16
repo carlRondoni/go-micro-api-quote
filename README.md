@@ -19,14 +19,10 @@ The design aims for simplicity and clarity so that any developer can easily iden
 ## Basic Structure
 
 ```
-├── cmd/ # Service entrypoint(s)
 ├── internal/
-│ ├── domain/ # Aggregates, value objects, domain logic
-│ ├── infra/ # Infrastructure (DB, external services, etc.)
-│ └── app/ # Application / use cases
-├── doc/ # Documentation and decisions
+│ └── domain/ # Aggregates, value objects, domain logic
+├── docs/ # Documentation and decisions
 │ └── decisions.md
-├── tests/ # Additional tests
 └── README.md
 ```
 
