@@ -1,4 +1,4 @@
-package book
+package quote_value_objects
 
 import "github.com/google/uuid"
 

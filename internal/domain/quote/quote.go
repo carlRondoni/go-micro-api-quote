@@ -2,13 +2,14 @@ package quote
 
 import (
 	"go-micro-api-quote/internal/domain/author"
+	"go-micro-api-quote/internal/domain/quote/quote_value_objects"
 
 	"github.com/google/uuid"
 )
 
 type Quote struct {
-	Id     Id
-	Text   Text
+	Id     quote_value_objects.Id
+	Text   quote_value_objects.Text
 	Author author.Author
 }
 
@@ -17,8 +18,8 @@ func NewFromValues(
 	txt string,
 ) Quote {
 	return Quote{
-		Id:     NewIdFromUuid(uuid.New()),
-		Text:   NewtextFromString(txt),
+		Id:     quote_value_objects.NewIdFromUuid(uuid.New()),
+		Text:   quote_value_objects.NewTextFromString(txt),
 		Author: author.NewAuthorFromString(athr),
 	}
 }

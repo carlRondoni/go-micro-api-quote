@@ -1,4 +1,4 @@
-package quote
+package quote_value_objects
 
 type Text struct {
 	value string
@@ -8,6 +8,6 @@ func (vo Text) Value() string {
 	return vo.value
 }
 
-func NewtextFromString(value string) Text {
+func NewTextFromString(value string) Text {
 	return Text{value: value}
 }

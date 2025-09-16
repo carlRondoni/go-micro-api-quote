@@ -1,6 +1,6 @@
 module go-micro-api-quote
 
-go 1.22.2
+go 1.25.1
 
 require (
 	github.com/brianvoe/gofakeit/v7 v7.2.1

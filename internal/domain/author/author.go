@@ -1,15 +1,19 @@
 package author
 
-import "github.com/google/uuid"
+import (
+	"go-micro-api-quote/internal/domain/author/author_value_objects"
+
+	"github.com/google/uuid"
+)
 
 type Author struct {
-	Id   Id
-	Name Name
+	Id   author_value_objects.Id
+	Name author_value_objects.Name
 }
 
 func NewAuthorFromString(name string) Author {
 	return Author{
-		Id:   NewIdFromUuid(uuid.New()),
-		Name: NewNameFromString(name),
+		Id:   author_value_objects.NewIdFromUuid(uuid.New()),
+		Name: author_value_objects.NewNameFromString(name),
 	}
 }

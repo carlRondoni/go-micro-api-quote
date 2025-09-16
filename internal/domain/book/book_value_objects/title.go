@@ -1,4 +1,4 @@
-package book
+package book_value_objects
 
 type Title struct {
 	value string

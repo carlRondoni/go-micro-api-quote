@@ -1,4 +1,4 @@
-package quote
+package author_value_objects
 
 import "github.com/google/uuid"
 

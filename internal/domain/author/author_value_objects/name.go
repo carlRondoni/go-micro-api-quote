@@ -1,4 +1,4 @@
-package author
+package author_value_objects
 
 type Name struct {
 	value string

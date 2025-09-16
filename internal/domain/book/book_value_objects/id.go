@@ -1,4 +1,4 @@
-package author
+package book_value_objects
 
 import "github.com/google/uuid"
 
